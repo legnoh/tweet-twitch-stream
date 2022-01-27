@@ -3,13 +3,14 @@ import tweepy
 from twitchAPI.twitch import Twitch
 
 def tweet(update):
+  reply_id = os.environ.get('TWITTER_REPLY_ID')
   t = tweepy.Client(
     access_token=os.environ.get('TWITTER_ACCESS_TOKEN'),
     access_token_secret=os.environ.get('TWITTER_ACCESS_TOKEN_SECRET'),
     consumer_key=os.environ.get('TWITTER_CONSUMER_KEY'),
     consumer_secret=os.environ.get('TWITTER_CONSUMER_SECRET')
   )
-  t.create_tweet(text=update)
+  t.create_tweet(text=update, in_reply_to_tweet_id=reply_id)
 
 twitch = Twitch(os.environ.get('TWITCH_CLIENT_ID'), os.environ.get('TWITCH_CLIENT_SECRET'))
 
