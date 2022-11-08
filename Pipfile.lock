@@ -329,11 +329,11 @@
         },
         "tweepy": {
             "hashes": [
-                "sha256:274f91dfee6d4aed83d9178fbe338bbfd3c06a4220cfe14438159685db7569b7",
-                "sha256:c463fa147f75016e3a5ed3713580c7339a301b58f90895e696bfae068556d7cc"
+                "sha256:5e4c5b5d22f9e5dd9678a708fae4e40e6eeb1a860a89891a5de3040d5f3da8fe",
+                "sha256:86d4f6738cbd5a57f86dff7ae0caf52f66004d5777626bf5da970aa8c8aa35df"
             ],
             "index": "pypi",
-            "version": "==4.12.0"
+            "version": "==4.12.1"
         },
         "twitchapi": {
             "hashes": [
