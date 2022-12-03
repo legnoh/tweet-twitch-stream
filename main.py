@@ -12,7 +12,7 @@ def tweet(update):
   )
   t.create_tweet(text=update, in_reply_to_tweet_id=reply_id)
 
-twitch = Twitch(os.environ.get('TWITCH_CLIENT_ID'), os.environ.get('TWITCH_CLIENT_SECRET'))
+twitch = await Twitch(os.environ.get('TWITCH_CLIENT_ID'), os.environ.get('TWITCH_CLIENT_SECRET'))
 
 # get ID of user
 user_info = twitch.get_users(logins=[os.environ.get('TWITCH_USERNAME')])['data']
