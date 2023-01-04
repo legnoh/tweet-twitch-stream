@@ -74,10 +74,10 @@
         },
         "twitchapi": {
             "hashes": [
-                "sha256:b860f7cbf97e9ee740d88b65457df654b2319d2baddb493a83b65a429a0d41ec"
+                "sha256:6c25de40bbf34071c90f26d7033778275650082c3219d4b327441a1d67d89a24"
             ],
             "index": "pypi",
-            "version": "==3.2.2"
+            "version": "==3.3.0"
         },
         "urllib3": {
             "hashes": [
